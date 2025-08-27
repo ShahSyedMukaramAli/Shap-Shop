@@ -2,6 +2,7 @@
 Shap Shop is a fully responsive e-commerce web application built using HTML, CSS, and JavaScript.
 It allows users to browse products, add them to cart, manage addresses, and complete orders with a payment simulation.
 
+
 ✨ Features
 
 📱 Responsive Design – Works on mobile, tablet, and desktop.
@@ -20,6 +21,7 @@ It allows users to browse products, add them to cart, manage addresses, and comp
 
 
 
+
 🛠️ Tech Stack
 
 Frontend: HTML, CSS, JavaScript
@@ -27,6 +29,7 @@ Frontend: HTML, CSS, JavaScript
 Storage: LocalStorage for cart, orders, and addresses
 
 Deployment: https://shapshop.netlify.app
+
 
 
 
