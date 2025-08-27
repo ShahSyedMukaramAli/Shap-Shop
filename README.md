@@ -19,12 +19,15 @@ It allows users to browse products, add them to cart, manage addresses, and comp
 🤖 Chat Assistant – Smart assistant answers user queries.
 
 
+
 🛠️ Tech Stack
+
 Frontend: HTML, CSS, JavaScript
 
 Storage: LocalStorage for cart, orders, and addresses
 
 Deployment: https://shapshop.netlify.app
+
 
 
 🚀 How to Run
