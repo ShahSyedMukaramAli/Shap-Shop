@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shap Shop - Electronics</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    
+      <div class="logo">Shap Shop</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="category.html" class="active">Categories</a>
+        <a href="offers.html">Offers</a>
+        <a href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+        <a href="profile.html">Profile</a>
+        <a href="help.html">Help</a>
+      </nav>
+      <div class="hamburger" id="hamburger">☰</div>
+    
+  </header>
+
+  <!-- CONTENT -->
+  <main class="container">
+    <h1 class="page-title">Beauty</h1>
+
+    <div class="product-grid">
+      <!-- Product cards use data-* for robust JS -->
+      <div class="product-card" data-id="be-001" data-name="Nivea Body Lotion" data-price="365" data-img="image/blB.jpg">
+        <img src="image/blB.jpg" alt="Nivea Body Lotion">
+        <h3>Nivea Body Lotion</h3>
+        <div class="price">365</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="be-002" data-name="Lakme SPF 50 PA+++ Sunscreen" data-price="399" data-img="image/scB.jpg">
+        <img src="image/scB.jpg" alt="Lakme SPF 50 PA+++ Sunscreen">
+        <h3>Lakme SPF 50 PA+++ Sunscreen</h3>
+        <div class="price">399</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="be-003" data-name="L’Oréal Paris Glycolic Shampoo" data-price="249" data-img="image/smB.jpg">
+        <img src="image/smB.jpg" alt="L’Oréal Paris Glycolic Shampoo">
+        <h3>L’Oréal Paris Glycolic Shampoo</h3>
+        <div class="price">249</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="be-004" data-name="Mamaearth Face Wash Turmeric & Saffron" data-price="209" data-img="image/fwB.jpg">
+        <img src="image/fwB.jpg" alt="Mamaearth Face Wash Turmeric & Saffron">
+        <h3>Mamaearth Face Wash Turmeric & Saffron</h3>
+        <div class="price">209</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Shap Shop</a>
+    <a href="category.html">Categories</a>
+    <a href="help.html">Help</a>
+    <a href="about.html">About</a>
+  </div>
+  <p>©2025 by Shap Shop | All rights reserved</p>
+</footer>
+</body>
+</html>

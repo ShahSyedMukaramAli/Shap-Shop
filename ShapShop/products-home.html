@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shap Shop - Electronics</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+ 
+      <div class="logo">Shap Shop</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="category.html" class="active">Categories</a>
+        <a href="offers.html">Offers</a>
+        <a href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+        <a href="profile.html">Profile</a>
+        <a href="help.html">Help</a>
+      </nav>
+      <div class="hamburger" id="hamburger">☰</div>
+    
+  </header>
+
+  <!-- CONTENT -->
+  <main class="container">
+    <h1 class="page-title">Home</h1>
+
+    <div class="product-grid">
+      <!-- Product cards use data-* for robust JS -->
+      <div class="product-card" data-id="h-001" data-name="Butterfly 2 Burner Gas Stove" data-price="6500" data-img="image/Hgas.jpg">
+        <img src="image/Hgas.jpg" alt="Butterfly 2 Burner Gas Stove">
+        <h3>Butterfly 2 Burner Gas Stove</h3>
+        <div class="price">6,500</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="h-002" data-name="Aluminium 4 Piece Non-Stick Cookware Set" data-price="1249" data-img="image/Htw.jpg">
+        <img src="image/Htw.jpg" alt="Aluminium 4 Piece Non-Stick Cookware Set">
+        <h3>Aluminium 4 Piece Non-Stick Cookware Set</h3>
+        <div class="price">1,249</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="h-003" data-name="Butterfly 750 Watt Mixer Grinder" data-price="5499" data-img="image/Hmix.jpg">
+        <img src="image/Hmix.jpg" alt="Butterfly 750 Watt Mixer Grinder">
+        <h3>Butterfly 750 Watt Mixer Grinder</h3>
+        <div class="price">5,499</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="h-004" data-name="Handcrafted Glossy Grey Marble Dinner Set" data-price="5299" data-img="image/Hplt.jpg">
+        <img src="image/Hplt.jpg" alt="Handcrafted Glossy Grey Marble Dinner Set">
+        <h3>Handcrafted Glossy Grey Marble Dinner Set</h3>
+        <div class="price">5,299</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+  </main>
+
+ <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Shap Shop</a>
+    <a href="category.html">Categories</a>
+    <a href="help.html">Help</a>
+    <a href="about.html">About</a>
+  </div>
+  <p>©2025 by Shap Shop | All rights reserved</p>
+</footer>
+</body>
+</html>

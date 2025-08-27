@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shap Shop - Electronics</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+ 
+      <div class="logo">Shap Shop</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="category.html" class="active">Categories</a>
+        <a href="offers.html">Offers</a>
+        <a href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+        <a href="profile.html">Profile</a>
+        <a href="help.html">Help</a>
+      </nav>
+      <div class="hamburger" id="hamburger">☰</div>
+  
+  </header>
+
+  <!-- CONTENT -->
+  <main class="container">
+    <h1 class="page-title">Furniture</h1>
+
+    <div class="product-grid">
+      <!-- Product cards use data-* for robust JS -->
+      <div class="product-card" data-id="fu-001" data-name="Fabric Sofa Cum Bed Set" data-price="15999" data-img="image/Fsof.jpg">
+        <img src="image/Fsof.jpg" alt="Fabric Sofa Cum Bed Set">
+        <h3>Fabric Sofa Cum Bed Set</h3>
+        <div class="price">15,999</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="fu-002" data-name="Dining Table 6 Seater" data-price="25499" data-img="image/Fct.jpg">
+        <img src="image/Fct.jpg" alt="Dining Table 6 Seater">
+        <h3>Dining Table 6 Seater</h3>
+        <div class="price">25,499</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="fu-003" data-name="Wakefit Mattress Bed" data-price="13999" data-img="image/Fbd.jpg">
+        <img src="image/Fbd.jpg" alt="Wakefit Mattress Bed">
+        <h3>Wakefit Mattress Bed</h3>
+        <div class="price">13,999</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="fu-004" data-name="Wood Wardrobe Dark Wenge" data-price="13499" data-img="image/Fwd.jpg">
+        <img src="image/Fwd.jpg" alt="Wood Wardrobe Dark Wenge">
+        <h3>Wood Wardrobe Dark Wenge</h3>
+        <div class="price">13,499</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Shap Shop</a>
+    <a href="category.html">Categories</a>
+    <a href="help.html">Help</a>
+    <a href="about.html">About</a>
+  </div>
+  <p>©2025 by Shap Shop | All rights reserved</p>
+</footer>
+</body>
+</html>

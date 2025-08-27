@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shap Shop - Cart</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="js/script.js"></script>
+  <script defer src="js/cart.js"></script>
+  <style>
+  .auth-form1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto 0px auto 0px;
+}
+
+#addressDropdown {
+  max-width: 400px;      /* adjust to your layout */
+  padding-right: 30px;   /* keep space for dropdown arrow */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  #addressDropdown {
+  max-width: 200px;      /* adjust to your layout */
+  
+}
+}
+
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    
+      <div class="logo">Shap Shop</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="category.html">Categories</a>
+        <a href="offers.html">Offers</a>
+        <a href="cart.html" class="active">Cart <span id="cart-count" class="badge">0</span></a>
+        <a href="profile.html">Profile</a>
+        <a href="help.html">Help</a>
+      </nav>
+      <div class="hamburger" id="hamburger">☰</div>
+    
+  </header>
+
+  <!-- CONTENT -->
+  <main class="container">
+    <h1 class="page-title">Your Cart</h1>
+
+    <div class="cart-wrap">
+      <div id="cart-items" class="cart-list"><!-- rendered by JS --></div>
+
+      <div class="summary">
+        <div class="summary-row"><span>Items</span><strong id="summary-count">0</strong></div>
+        <div class="summary-row"><span>Shipping</span><span>Free</span></div>
+        <div class="summary-row grand"><span>Total</span><span id="summary-total">$0.00</span></div>
+		
+		<div style="display:flex; gap:5px; margin-top:10px; justify-content: space-between;">
+		<h4>Select Address</h4>
+		<div id="addressSelect"></div>
+		<select id="addressDropdown" class="auth-form1"></select>
+		</div>
+		
+        <div style="display:flex; gap:10px; margin-top:10px; justify-content: space-between;">
+          <button id="clear-cart" class="btn" style="background:#333;">Clear Cart</button>	  
+			<button id="checkoutBtn" class="btn">Proceed to Pay</button>
+        </div>
+		
+      </div>
+    </div>
+  </main>
+  
+<br><br><br><br><br>
+
+
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Shap Shop</a>
+    <a href="category.html">Categories</a>
+    <a href="help.html">Help</a>
+    <a href="about.html">About</a>
+  </div>
+  <p>©2025 by Shap Shop | All rights reserved</p>
+</footer>
+
+  <script>
+    // Load cart from localStorage
+    const cartItemsContainer = document.getElementById("cart-items");
+    const cartData = JSON.parse(localStorage.getItem("cart")) || [];
+
+    if (cartData.length === 0) {
+      cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+    } else {
+      cartData.forEach(item => {
+        const div = document.createElement("div");
+        div.classList.add("cart-item");
+        div.innerHTML = `
+          <img src="${item.img}" alt="${item.name}">
+          <div>
+            <h3>${item.name}</h3>
+            <p>${item.price}</p>
+          </div>
+        `;
+        cartItemsContainer.appendChild(div);
+      });
+    }
+  </script>
+  
+  <script>
+  const dropdown = document.getElementById("addressDropdown");
+Array.from(dropdown.options).forEach(opt => {
+  opt.title = opt.text;   // show full address on hover
+});
+  </script>
+</body>
+</html>

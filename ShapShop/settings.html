@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shap Shop - Settings</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="js/script.js"></script>
+  <script defer src="js/user.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Shap Shop</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="category.html">Categories</a>
+      <a href="offers.html">Offers</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+      <a href="profile.html">Profile</a>
+      <a href="help.html">Help</a>
+    </nav>
+    <div class="hamburger" id="hamburger">☰</div>
+  </header>
+
+  <!-- SETTINGS FORM -->
+  <main class="container">
+    <h1 class="page-title">Account Settings</h1>
+    <form id="settingsForm" class="auth-form">
+      <input type="text" id="updateName" placeholder="Full Name" required>
+      <input type="email" id="updateEmail" placeholder="Email" required>
+      <input type="password" id="updatePassword" placeholder="New Password (optional)">
+      <button type="submit" class="btn">Save Changes</button>
+    </form>
+  </main>
+
+ <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Shap Shop</a>
+    <a href="category.html">Categories</a>
+    <a href="help.html">Help</a>
+    <a href="about.html">About</a>
+  </div>
+  <p>©2025 by Shap Shop | All rights reserved</p>
+</footer>
+</body>
+</html>

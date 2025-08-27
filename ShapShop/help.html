@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shap Shop - Help</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="js/script.js"></script>
+  <script defer src="js/chatbot.js"></script>
+  <style>
+  
+
+
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    
+      <div class="logo">Shap Shop</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="category.html">Categories</a>
+        <a href="offers.html">Offers</a>
+        <a href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+        <a href="profile.html">Profile</a>
+        <a href="help.html" class="active">Help</a>
+      </nav>
+      <div class="hamburger" id="hamburger">☰</div>
+    
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <h1 class="page-title">Help & Support</h1>
+
+    <section class="help-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq">
+  <div class="faq-item">
+    <h3 class="faq-question">How do I place an order?</h3>
+    <p class="faq-answer">Browse products, add them to your cart, and checkout using your preferred payment method.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3 class="faq-question">How do I track my order?</h3>
+    <p class="faq-answer">Go to your <a href="profile.html">Profile</a> and click on "Order Status" to see updates.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3 class="faq-question">Can I change my delivery address?</h3>
+    <p class="faq-answer">Yes! Go to <a href="address.html">Manage Address</a> in your profile and update your info.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3 class="faq-question">What payment methods are accepted?</h3>
+    <p class="faq-answer">We accept all major credit cards, debit cards, and PayPal.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3 class="faq-question">How do I contact support?</h3>
+    <p class="faq-answer">You can email us at <a href="mailto:support@shapshop.com">support@shapshop.com</a> or use the contact form below.</p>
+  </div>
+</div>
+    </section>
+	
+	
+
+    <section class="help-section">
+      <h2>Contact Us</h2>
+      <form id="help-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p id="form-status"></p>
+    </section>
+  </main>
+
+
+
+<!-- AI Chat Bot Widget -->
+<div id="chatbot-container">
+  <div id="chatbot-header">AI Assistant 🤖</div>
+  <div id="chatbot-messages"></div>
+  <input type="text" id="chatbot-input" placeholder="Ask me something...">
+</div>
+
+<!-- Chatbot toggle button (top-right) -->
+<a href="javascript:void(0)" id="chatbot-btn">
+  <img src="https://www.shutterstock.com/image-vector/chat-bot-icon-virtual-smart-600nw-2478937553.jpg" alt="Chat Bot">
+</a>
+
+
+
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Shap Shop</a>
+    <a href="category.html">Categories</a>
+    <a href="help.html">Help</a>
+    <a href="about.html">About</a>
+  </div>
+  <p>©2025 by Shap Shop | All rights reserved</p>
+</footer>
+
+
+  
+  <script>
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      const item = question.parentElement;
+      item.classList.toggle('active');
+    });
+  });
+
+  // Help form handler
+  document.getElementById('help-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    document.getElementById('form-status').textContent = "Thank you! We received your message.";
+    e.target.reset();
+  });
+</script>
+</body>
+</html>

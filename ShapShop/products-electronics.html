@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shap Shop - Electronics</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+   
+      <div class="logo">Shap Shop</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="category.html" class="active">Categories</a>
+        <a href="offers.html">Offers</a>
+        <a href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+        <a href="profile.html">Profile</a>
+        <a href="help.html">Help</a>
+      </nav>
+      <div class="hamburger" id="hamburger">☰</div>
+  
+  </header>
+
+  <!-- CONTENT -->
+  <main class="container">
+    <h1 class="page-title">Electronics</h1>
+
+    <div class="product-grid">
+      <!-- Product cards use data-* for robust JS -->
+      <div class="product-card" data-id="el-001" data-name="HP 15" data-price="34999" data-img="image/HPLAP.jpg">
+        <img src="image/HPLAP.jpg" alt="HP 15">
+        <h3>HP 15</h3>
+        <div class="price">34,999</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="el-002" data-name="Lenovo IdeaPad Slim 3" data-price="42699" data-img="image/LENLAP.jpg">
+        <img src="image/LENLAP.jpg" alt="Lenovo IdeaPad Slim 3">
+        <h3>Lenovo IdeaPad Slim 3</h3>
+        <div class="price">42,699</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="el-003" data-name="Apple MacBook Air" data-price="91999" data-img="image/APPMAC.jpg">
+        <img src="image/APPMAC.jpg" alt="Apple MacBook Air">
+        <h3>Apple MacBook Air</h3>
+        <div class="price">91,999</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="el-004" data-name="Samsung TV 55 inches D Series" data-price="43499" data-img="image/SAMTV.jpg">
+        <img src="image/SAMTV.jpg" alt="Samsung TV 55 inches D Series">
+        <h3>Samsung Tv 55 inches</h3>
+        <div class="price">43,499</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="el-005" data-name="Samsung Galaxy S24 Ultra 5G" data-price="97999" data-img="image/SAMS24.jpg">
+        <img src="image/SAMS24.jpg" alt="Samsung Galaxy S24 Ultra 5G">
+        <h3>Samsung Galaxy S24 Ultra 5G</h3>
+        <div class="price">97,999</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="el-006" data-name="Samsung Galaxy A55 5G" data-price="28999" data-img="image/SAMA55.jpg">
+        <img src="image/SAMA55.jpg" alt="Samsung Galaxy A55 5G">
+        <h3>Samsung Galaxy A55 5G</h3>
+        <div class="price">28,999</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="el-007" data-name="iPhone 16 128 GB" data-price="72499" data-img="image/IP16.jpg">
+        <img src="image/IP16.jpg" alt="iPhone 16 128 GB">
+        <h3>iPhone 16 128 GB</h3>
+        <div class="price">72,499</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="el-008" data-name="Moto G85 5G" data-price="16499" data-img="image/MOTO85.jpg">
+        <img src="image/MOTO85.jpg" alt="Moto G85 5G">
+        <h3>Moto G85 5G</h3>
+        <div class="price">16,499</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+	  
+	  <div class="product-card" data-id="el-009" data-name="boAt Airdopes 141/8" data-price="999" data-img="image/BOAT.jpg">
+        <img src="image/BOAT.jpg" alt="boAt Airdopes 141/8">
+        <h3>boAt Airdopes 141/8</h3>
+        <div class="price">999</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+	  
+	  <div class="product-card" data-id="el-0010" data-name="Sony WH-1000XM4" data-price="22999" data-img="image/SONY.jpg">
+        <img src="image/SONY.jpg" alt="Sony WH-1000XM4">
+        <h3>Sony WH-1000XM4</h3>
+        <div class="price">22,999</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+	  
+	  <div class="product-card" data-id="el-0011" data-name="Whirlpool 184L 5 Star" data-price="16999" data-img="image/WHIFR.jpg">
+        <img src="image/WHIFR.jpg" alt="Whirlpool 184L 5 Star">
+        <h3>Whirlpool 184L 5 Star</h3>
+        <div class="price">16,999</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+	  
+	  <div class="product-card" data-id="el-0012" data-name="Whirlpool Washing Machine 10 Kg 5 Star" data-price="24999" data-img="image/WHIWM.jpg">
+        <img src="image/WHIWM.jpg" alt="Whirlpool Washing Machine">
+        <h3>Whirlpool 10 Kg 5 Star</h3>
+        <div class="price">24,999</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Shap Shop</a>
+    <a href="category.html">Categories</a>
+    <a href="help.html">Help</a>
+    <a href="about.html">About</a>
+  </div>
+  <p>©2025 by Shap Shop | All rights reserved</p>
+</footer>
+</body>
+</html>

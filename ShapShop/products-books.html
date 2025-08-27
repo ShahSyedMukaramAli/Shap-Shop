@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shap Shop - Electronics</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+   
+      <div class="logo">Shap Shop</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="category.html" class="active">Categories</a>
+        <a href="offers.html">Offers</a>
+        <a href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+        <a href="profile.html">Profile</a>
+        <a href="help.html">Help</a>
+      </nav>
+      <div class="hamburger" id="hamburger">☰</div>
+   
+  </header>
+
+  <!-- CONTENT -->
+  <main class="container">
+    <h1 class="page-title">Books</h1>
+
+    <div class="product-grid">
+      <!-- Product cards use data-* for robust JS -->
+      <div class="product-card" data-id="bo-001" data-name="Harry Potter: The Complete Collection" data-price="8999" data-img="image/Bhp.jpg">
+        <img src="image/Bhp.jpg" alt="Harry Potter: The Complete Collection">
+        <h3>Harry Potter: The Complete Collection</h3>
+        <div class="price">8,999</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="bo-002" data-name="Marvel Comic Secret Wars" data-price="1599" data-img="image/Bsw.jpg">
+        <img src="image/Bsw.jpg" alt="Marvel Comic Secret Wars">
+        <h3>Marvel Comic Secret Wars</h3>
+        <div class="price">1,599</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="bo-003" data-name="The Magic" data-price="299" data-img="image/Btm.jpg">
+        <img src="image/Btm.jpg" alt="The Magic">
+        <h3>The Magic</h3>
+        <div class="price">299</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="bo-004" data-name="Core Java: An Integrated Approach" data-price="699" data-img="image/Bjava.jpg">
+        <img src="image/Bjava.jpg" alt="Core Java: An Integrated Approach">
+        <h3>Core Java: An Integrated Approach</h3>
+        <div class="price">699</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="bo-005" data-name="Game of Thrones: The Complete Boxset" data-price="3999" data-img="image/Blor.jpg">
+        <img src="image/Blor.jpg" alt="Game of Thrones: The Complete Boxset">
+        <h3>Game of Thrones: The Complete Boxset</h3>
+        <div class="price">3,999</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="bo-006" data-name="Feluda Samagra 1, 2" data-price="2199" data-img="image/Bfe.jpg">
+        <img src="image/Bfe.jpg" alt="Feluda Samagra 1, 2">
+        <h3>Feluda Samagra 1, 2</h3>
+        <div class="price">2,199</div>
+        <button type="button" class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Shap Shop</a>
+    <a href="category.html">Categories</a>
+    <a href="help.html">Help</a>
+    <a href="about.html">About</a>
+  </div>
+  <p>©2025 by Shap Shop | All rights reserved</p>
+</footer>
+</body>
+</html>
