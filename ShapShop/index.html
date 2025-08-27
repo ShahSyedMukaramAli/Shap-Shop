@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shap Shop - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="js/script.js"></script>
+  <script defer src="script.js"></script>
+  
+  <style>
+  /* Reset & Basic */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/* Categories */
+.categories h2 { margin: 2rem 0 1rem; text-align: center; }
+.category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; }
+.category-card { background: #fff; padding: 1.5rem; text-align: center; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s; cursor: pointer; }
+.category-card:hover { transform: translateY(-5px); background: #0077ff; color: #fff; }
+
+/* Steal Deals */
+.steal-deals { text-align: center; background: #fffbf0; padding: 2rem;  border-radius: 10px; }
+
+/* Product Grid */
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+.product-card { background: #fff; padding: 1rem; border-radius: 10px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.3s; }
+.product-card:hover { transform: translateY(-5px); }
+.product-card img { width: 100%; border-radius: 10px; margin-bottom: 0.5rem; }
+.product-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+.product-card .price { font-weight: bold; color: #0077ff; }
+
+/* Features */
+.features { display: flex; justify-content: space-around;  }
+.feature-card { background: #fff; padding: 1rem; border-radius: 10px; flex: 1; text-align: center; margin: 0 0.5rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.category-btn {
+  background: #2e6cc3;
+  color: white;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.category-btn:hover {
+  background: #095cd1;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Image Banner */
+.image-banner {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.image-banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Shap Shop</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="category.html">Categories</a>
+      <a href="offers.html">Offers</a>
+      <a href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+      <a href="profile.html">Profile</a>
+      <a href="help.html">Help</a>
+    </nav>
+    <div class="hamburger" id="hamburger">☰</div>
+  </header>
+
+
+
+  <!-- MAIN CONTENT -->
+  
+  <!-- IMAGE BANNER -->
+<section class="image-banner">
+  <img src="image/ban1.jpg" alt="Promotional Banner">
+</section>
+
+
+
+<section class="hero">
+    <div class="hero-content">
+      <h1>Discover the Latest Electronics</h1>
+      <p>Exclusive deals and top brands at your fingertips.</p>
+      <a href="category.html" class="btn primary-btn">Shop Now</a>
+    </div>
+  </section>
+<br><br><br>
+
+  <!-- FEATURED CATEGORIES -->
+  <section class="categories container">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+    <button class="category-btn" onclick="location.href='products-electronics.html'">Electronics</button>
+    <button class="category-btn" onclick="location.href='products-fashion.html'">Fashion</button>
+    <button class="category-btn" onclick="location.href='products-home.html'">Home</button>
+    <button class="category-btn" onclick="location.href='products-sports.html'">Sports</button>
+  </div>
+  </section>
+<br><br><br>
+  <!-- STEAL DEAL / OFFERS -->
+  <section class="steal-deals container">
+    <h2>Steal Deals - Coming Soon!</h2>
+    <p>Stay tuned for amazing discounts!</p>
+  </section>
+<br><br><br>
+  <!-- BEST SELLERS -->
+  <section class="best-sellers container">
+    <center><h2>Best Sellers</h2></center>
+    <div class="product-grid" id="home-products">
+      <!-- Products will be rendered via JS -->
+    </div>
+  </section>
+<br><br><br>
+
+<!-- Offers List -->
+<center><h2>Featured Products</h2></center>
+  <div id="offers-list" class="product-grid"></div>
+</main>
+
+<br>
+<br>
+<br>
+  <!-- BRAND FEATURES -->
+  <section class="features container">
+    <div class="feature-card">Free Shipping</div>
+    <div class="feature-card">24/7 Support</div>
+    <div class="feature-card">Secure Payment</div>
+  </section>
+
+  <br><br><br>
+
+
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Shap Shop</a>
+    <a href="category.html">Categories</a>
+    <a href="help.html">Help</a>
+    <a href="about.html">About</a>
+  </div>
+  <p>©2025 by Shap Shop | All rights reserved</p>
+</footer>
+  
+  <script>
+  
+  document.addEventListener("DOMContentLoaded", () => {
+  const products = [
+    { id: "s-001", name: "Samsung", price:0, img: "image/samlogo.png" },
+    { id: "a-002", name: "Apple", price: 699, img: "image/applelogo.png" },
+    { id: "m-003", name: "Motorola", price: 199, img: "image/motologo.png" },
+    { id: "w-004", name: "Whirpool", price: 499, img: "image/wplogo.png" },
+    { id: "l-005", name: "Lego", price: 399, img: "image/legologo.png" },
+    
+  ];
+
+  const productGrid = document.getElementById("home-products");
+  productGrid.innerHTML = products.map(p => `
+    <div class="product-card">
+      <img src="${p.img}" alt="${p.name}">
+      <h3>${p.name}</h3>
+      <!--<div class="price">$${p.price}</div>-->
+    </div>
+  `).join("");
+});
+
+</script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+  const offers = [
+    { id: "off-001", name: "Apple MacBook Air", price: 90999, img: "image/APPMAC.jpg" },
+    { id: "off-002", name: "Butterfly 2 Burner Gas Stove", price: 6000, img: "image/Hgas.jpg" },
+    { id: "off-003", name: "LEGO Harry Potter Set", price: 999, img: "image/Khp.jpg" },
+    { id: "off-004", name: "Gym Bags for Men", price: 409, img: "image/Sbg.jpg" }
+  ];
+
+  const offersList = document.getElementById("offers-list");
+
+  if (!offersList) return;
+
+  offersList.innerHTML = offers.map(item => `
+    <div class="product-card" data-id="${item.id}" data-name="${item.name}" data-price="${item.price}" data-img="${item.img}">
+      <img src="${item.img}" alt="${item.name}">
+      <h3>${item.name}</h3>
+      <div class="price">${item.price}</div>
+      <button type="button" class="btn add-to-cart">Add to Cart</button>
+    </div>
+  `).join("");
+});
+
+</script>
+  
+</body>
+</html>
+
+  
