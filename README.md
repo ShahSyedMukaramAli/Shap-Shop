@@ -1,4 +1,4 @@
-# Shap-Shop
+# Shap Shop
 Shap Shop is a fully responsive e-commerce web application built using HTML, CSS, and JavaScript.
 It allows users to browse products, add them to cart, manage addresses, and complete orders with a payment simulation.
 
